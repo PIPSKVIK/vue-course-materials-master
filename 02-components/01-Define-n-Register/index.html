@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+
+<template id="v-cat-template">
+  <figure>
+    <img :src="'https://cataas.com/cat?height=200&random=' + random" alt="Random cat 1">
+    <figcaption>Cat #{{ random }}</figcaption>
+  </figure>
+</template>
+
+<script id="v-cat-x-template" type="text/x-template">
+  <figure>
+    <img :src="'https://cataas.com/cat?height=200&random=' + random" alt="Random cat 1">
+    <figcaption>Cat #{{ random }}</figcaption>
+  </figure>
+</script>
+
+<main id="app">
+  <v-cat></v-cat>
+
+  <v-cat2></v-cat2>
+
+  <v-cat3></v-cat3>
+
+  <v-cat4></v-cat4>
+
+  <v-cat5></v-cat5>
+</main>
+
+<script type="module" src="./script.js"></script>
+</body>
+</html>
